@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Marketplace App</title>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://i.ibb.co/ymR233bR/logobanner.jpg" alt="logobanner" border="0"></a>
+        <h1 class="intro">Cool Tech</h1>
+        <p>Explore and shop from our marketplace</p>
+        </div>
+        <!-- End Header -->
+        <!-- Navbar -->
+        <div class="navbar">
+            <div> 
+               <h2>Featured Products</h2> 
+            </div>  
+         <div class="search">
+            <form>
+                <div class="input-container">
+                    <input type="text" placeholder="Search Products">
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+         </div>    
+           <div class="menu">
+            <ul class="nav-menu">
+                <li>
+                    <a onclick="closeMenu()" href="#products" class="nav-link">Products</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="#featured" class="nav-link">Featured</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+                </li>
+            </ul>
+            <div onclick="mobileMenu()" class="mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           </div>
+    </div>
+    <!-- End Navbar -->
+     <!-- Sort Bar -->
+      <div class="sort-bar">
+        <div>
+            <i class="fa-solid fa-headphones"></i>
+            <p>Headphone</p>
+        </div>
+        <div>
+             <i class="fa-solid fa-tablet-screen-button"></i>
+            <p>Tablet</p>
+        </div>
+        <div>
+             <i class="fa-solid fa-computer-mouse"></i>
+            <p>Mouse</p>
+        </div>
+        <div>
+             <i class="fa-solid fa-keyboard"></i>
+            <p>Keyboard</p>
+        </div>
+    </div>
+    <!-- End Sort Bar-->
+
+ <!-- Products -->
+
+ <div class="products">
+    <!-- Product Card -->
+<div class="card">
+    <img src="https://images.pexels.com/photos/221185/pexels-photo-221185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="/"
+    />
+</div>
+<div class="card-title">
+    <h4>Tablet</h4><br />
+<p><span class="grey">Email: info@cooltech.se</span><br />
+        <button class="grey">View Details</button></p>
+</div>
+<!-- Product Card -->
+<div class="card">
+    <img src="https://images.pexels.com/photos/815494/pexels-photo-815494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="/"
+    />
+</div>
+<div class="card-title">
+    <h4>Headphones</h4><br />
+<p><span class="grey">Email: info@cooltech.se</span><br />
+        <button class="grey">View Details</button></p>
+</div>
+<!-- Product Card -->
+<div class="card">
+    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="/"
+    />
+</div>
+<div class="card-title">
+    <h4>Mouse</h4><br />
+<p><span class="grey">Email: info@cooltech.se</span><br />
+        <button class="grey">View Details</button></p>
+</div>
+<!-- Product Card -->
+<div class="card">
+    <img src="https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="/"
+    />
+</div>
+<div class="card-title">
+    <h4>Keyboard</h4><br />
+<p><span class="grey">Email: info@cooltech.se</span><br />
+        <button class="grey">View Details</button></p>
+</div>
+ </div>
+  <!-- Products End --> 
+</div> 
+   <!-- Container End --> 
+<script>
+    const menuBtn = document.querySelector('.mobile')
+    const navMenu = document.querySelector('.nav-menu')
+
+    const mobileMenu = () => {
+        menuBtn.classList.toggle('active')
+        navMenu.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
